@@ -96,21 +96,21 @@ if mods['angelsrefining'] then
     if mods['pyrawores'] then
         -- mk01
         fun.global_item_replacer('ore-floatation-cell', 'flotation-cell-mk01')
-        table.insert(data.raw['assembling-machine']['flotation-cell-mk01'].crafting_categories, 'ore-sorting-t2')
+        table.insert(data.raw['assembling-machine']['flotation-cell-mk01'].crafting_categories, 'ore-refining-t2')
         data.raw.recipe['ore-floatation-cell'] = nil
         fun.remove_recipe_unlock('ore-floatation-cell')
         -- mk02
         fun.global_item_replacer('ore-floatation-cell-2', 'flotation-cell-mk02')
-        table.insert(data.raw['assembling-machine']['flotation-cell-mk02'].crafting_categories, 'ore-sorting-t2')
+        table.insert(data.raw['assembling-machine']['flotation-cell-mk02'].crafting_categories, 'ore-refining-t2')
         data.raw.recipe['ore-floatation-cell-2'] = nil
         fun.remove_recipe_unlock('ore-floatation-cell-2')
         -- mk03
         fun.global_item_replacer('ore-floatation-cell-3', 'flotation-cell-mk03')
-        table.insert(data.raw['assembling-machine']['flotation-cell-mk03'].crafting_categories, 'ore-sorting-t2')
+        table.insert(data.raw['assembling-machine']['flotation-cell-mk03'].crafting_categories, 'ore-refining-t2')
         data.raw.recipe['ore-floatation-cell-3'] = nil
         fun.remove_recipe_unlock('ore-floatation-cell-3')
         -- add category to py mk04
-        table.insert(data.raw['assembling-machine']['flotation-cell-mk04'].crafting_categories, 'ore-sorting-t2')
+        table.insert(data.raw['assembling-machine']['flotation-cell-mk04'].crafting_categories, 'ore-refining-t2')
     end
 
     if mods['angelssmelting'] then

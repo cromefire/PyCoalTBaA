@@ -620,6 +620,32 @@ function overrides.results_replacer(recipe, old, new, new_amount, newtype)
     end
 end
 
+--replace mining fluid in resource
+function overrides.mining_fluid_replacer(resource, old, new)
+    --log('hit')
+    --log(resource)
+    if data.raw.fluid[old] ~= nil then
+        if data.raw.fluid[new] ~= nil then
+            --log(resource)
+            if type(resource) == 'string' then
+                local R = data.raw.resource[resource]
+                resource = R
+            end
+            --log(serpent.block(R))
+            if resource ~= nil then
+                --log('hit')
+                --log(resource.name)
+                --log(serpent.block(resource))
+                if resource.minable ~= nil then
+                    if resource.minable.required_fluid == old then
+                        resource.minable.required_fluid = new
+                    end
+                end
+            end
+        end
+    end
+end
+
 --replace an item/fluid in every recipes ingredients/results
 --best used to merge items that are duplicated in mods that should be the same
 function overrides.global_item_replacer(old, new, blackrecipe)
@@ -651,6 +677,22 @@ function overrides.global_item_replacer(old, new, blackrecipe)
                     --log(serpent.block(brecipeset))
                     overrides.ingredient_replace(recipe, old, new)
                     overrides.results_replacer(recipe, old, new)
+                end
+                --end
+            end
+
+            --log('hit')
+            local resources = table.deepcopy(data.raw.resource)
+            local bresourceset = {}
+            --log(serpent.block(bresourceset))
+            for resource in pairs(resources) do
+                --log('hit')
+                if not bresourceset[resource] then
+                    --log('hit')
+                    --log(serpent.block(resource))
+                    --log(serpent.block(resource.name))
+                    --log(serpent.block(bresourceset))
+                    overrides.mining_fluid_replacer(resource, old, new)
                 end
                 --end
             end

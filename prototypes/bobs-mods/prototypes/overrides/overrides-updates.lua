@@ -29,7 +29,7 @@ if mods['bobelectronics'] and mods['pyhightech'] then
                 amount = 1
             }
         },
-        results = 'multi-layer-circuit-board'
+        result = 'multi-layer-circuit-board'
     }
 end
 

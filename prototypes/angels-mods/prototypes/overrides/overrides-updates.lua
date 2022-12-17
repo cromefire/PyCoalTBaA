@@ -1,10 +1,6 @@
 -- DATA UPDATES STAGE OVERRIDES
 if mods['angelsrefining'] then
     fun.global_item_replacer('coke', 'solid-coke')
-    fun.global_item_replacer('basic-circuit-board', 'pcb1')
-    fun.global_item_replacer('circuit-board', 'pcb2')
-    fun.global_item_replacer('superior-circuit-board', 'pcb3')
-    fun.global_item_replacer('multi-layer-circuit-board', 'pcb4')
     fun.global_item_replacer('limestone', 'solid-limestone')
     fun.global_item_replacer('acidgas', 'gas-acid')
     fun.global_item_replacer('salt', 'solid-salt')
@@ -120,31 +116,4 @@ if mods['angelsrefining'] then
         fun.global_item_replacer('silicon','angels-mono-silicon')
     end
 
-    --data.raw.recipe['convert-pcb1'] = {
-    --    enabled = 1,
-    --    name = 'Convert Basic Circuit Board',
-    --    type = 'recipe',
-    --    ingredients = {
-    --        {
-    --            type = 'item',
-    --            name = 'pcb1',
-    --            amount = 1
-    --        }
-    --    },
-    --    result = 'basic-circuit-board'
-    --}
-
-    --data.raw.recipe['convert-pcb4'] = {
-    --    enabled = 1,
-    --    name = 'Convert Multi Layer Circuit Board',
-    --    type = 'recipe',
-    --    ingredients = {
-    --        {
-    --            type = 'item',
-    --            name = 'pcb4',
-    --            amount = 1
-    --        }
-    --    },
-    --    result = 'multi-layer-circuit-board'
-    --}
 end

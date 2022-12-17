@@ -60,6 +60,10 @@ if mods['angelsrefining'] then
     fun.global_item_replacer('solid-sodium-hydroxide', 'sodium-hydroxide')
     fun.global_item_replacer('solid-sodium-sulfate', 'sodium-sulfate')
     -- fun.global_item_replacer('petri-dish', 'empty-petri-dish')
+    fun.global_item_replacer('basic-circuit-board', 'pcb1')
+    fun.global_item_replacer('circuit-board', 'pcb2')
+    fun.global_item_replacer('superior-circuit-board', 'pcb3')
+    fun.global_item_replacer('multi-layer-circuit-board', 'pcb4')
 
     -- Fluid Converter Recipes
     if mods['angelspetrochem'] then

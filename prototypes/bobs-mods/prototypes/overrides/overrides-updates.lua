@@ -20,8 +20,19 @@ if mods['bobelectronics'] and mods['pyhightech'] then
         result = 'basic-circuit-board'
     }
 
-    local mechRecep = table.deepcopy(data.raw.recipe["mech-brain"])
-    mechRecep.ingredients[2].name = "pcb4"
+    local mechRecep = {
+        enabled = true,
+        name = 'mech-brain-alt',
+        type = 'recipe',
+        ingredientes = {
+            {
+                type = 'item',
+                name = 'pcb4',
+                amount = 40
+            }
+        },
+        result = 'mech-brain'
+    }
     data.raw.recipe['mech-brain-alt'] = mechRecep
 end
 

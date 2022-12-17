@@ -19,17 +19,3 @@ log(recipe_count)
 log(fluid_count)
 log(gas_count)
 ]]--
-
-
--- Don't work with replacer
-table.insert(data.raw["recipe"]["seed-extractor"].ingredients, {
-    type = "item",
-    name = "pcb1",
-    amount = 4
-})
-
-table.insert(data.raw["recipe"]["mech-brain"].ingredients, {
-    type = "item",
-    name = "pcb4",
-    amount = 40
-})

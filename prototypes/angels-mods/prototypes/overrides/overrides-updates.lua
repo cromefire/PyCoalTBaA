@@ -119,4 +119,32 @@ if mods['angelsrefining'] then
     if mods['angelssmelting'] then
         fun.global_item_replacer('silicon','angels-mono-silicon')
     end
+
+    data.raw.recipe['convert-pcb1'] = {
+        enabled = 1,
+        name = 'Convert Basic Circuit Board',
+        type = 'recipe',
+        ingredients = {
+            {
+                type = 'item',
+                name = 'pcb1',
+                amount = 1
+            }
+        },
+        result = 'basic-circuit-board'
+    }
+
+    data.raw.recipe['convert-pcb4'] = {
+        enabled = 1,
+        name = 'Convert Multi Layer Circuit Board',
+        type = 'recipe',
+        ingredients = {
+            {
+                type = 'item',
+                name = 'pcb4',
+                amount = 1
+            }
+        },
+        result = 'multi-layer-circuit-board'
+    }
 end

@@ -10,6 +10,7 @@ if mods['bobelectronics'] and mods['pyhightech'] then
         enabled = 1,
         name = 'convert-pcb1',
         type = 'recipe',
+        category = 'chip',
         ingredients = {
             {
                 type = 'item',
@@ -17,13 +18,16 @@ if mods['bobelectronics'] and mods['pyhightech'] then
                 amount = 1
             }
         },
-        result = 'basic-circuit-board'
+        results = {
+            {type = 'item', name = 'basic-circuit-board', amount = 1}
+        }
     }
 
     data.raw.recipe['convert-pcb4'] = {
         enabled = 1,
         name = 'convert-pcb4',
         type = 'recipe',
+        category = 'chip',
         ingredients = {
             {
                 type = 'item',
@@ -31,7 +35,9 @@ if mods['bobelectronics'] and mods['pyhightech'] then
                 amount = 1
             }
         },
-        result = 'multi-layer-circuit-board'
+        results = {
+            {type = 'item', name = 'multi-layer-circuit-board', amount = 1}
+        }
     }
 end
 

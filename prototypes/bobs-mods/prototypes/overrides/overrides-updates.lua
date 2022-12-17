@@ -8,7 +8,7 @@ if mods['bobelectronics'] and mods['pyhightech'] then
 
     data.raw.recipe['convert-pcb1'] = {
         enabled = 1,
-        name = 'Convert Basic Circuit Board',
+        name = 'convert-pcb1',
         type = 'recipe',
         ingredients = {
             {
@@ -22,7 +22,7 @@ if mods['bobelectronics'] and mods['pyhightech'] then
 
     data.raw.recipe['convert-pcb4'] = {
         enabled = 1,
-        name = 'Convert Multi Layer Circuit Board',
+        name = 'convert-pcb4',
         type = 'recipe',
         ingredients = {
             {

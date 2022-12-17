@@ -15,10 +15,7 @@ if mods['bobelectronics'] and mods['pyhightech'] then
                 amount = 1
             }
         },
-        results = {
-            {type = 'item', name = 'basic-circuit-board', amount = 1}
-        },
-        main_product = ""
+        result = 'basic-circuit-board'
     }
 
     data.raw.recipe['convert-pcb4'] = {
@@ -32,10 +29,7 @@ if mods['bobelectronics'] and mods['pyhightech'] then
                 amount = 1
             }
         },
-        results = {
-            {type = 'item', name = 'multi-layer-circuit-board', amount = 1}
-        },
-        main_product = ""
+        results = 'multi-layer-circuit-board'
     }
 end
 

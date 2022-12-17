@@ -24,7 +24,7 @@ if mods['bobelectronics'] and mods['pyhightech'] then
         enabled = true,
         name = 'mech-brain-alt',
         type = 'recipe',
-        ingredientes = {
+        ingredients = {
             {
                 type = 'item',
                 name = 'pcb4',

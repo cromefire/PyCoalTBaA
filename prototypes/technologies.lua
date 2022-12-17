@@ -78,3 +78,9 @@ table.insert(data.raw["technology"]["fine-electronics"].effects, {
     type = "unlock-recipe",
     recipe = "nitrobenzene"
 })
+
+--PCB fixes
+table.insert(data.raw["technology"]["walking-vehicle"].effects, {
+    type = "unlock-recipe",
+    recipe = "mech-brain-alt"
+})

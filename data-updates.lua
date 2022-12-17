@@ -5,3 +5,6 @@ require('prototypes/angels-mods/Data-Updates')
 
 --bob mods
 require('prototypes/bobs-mods/Data-Updates')
+
+--tech
+require('prototypes/technologies')

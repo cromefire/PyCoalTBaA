@@ -80,7 +80,12 @@ table.insert(data.raw["technology"]["fine-electronics"].effects, {
 })
 
 --PCB fixes
-table.insert(data.raw["technology"]["walking-vehicle"].effects, {
+table.insert(data.raw["technology"]["electonics"].effects, {
     type = "unlock-recipe",
-    recipe = "mech-brain-alt"
+    recipe = "convert-pcb1"
+})
+
+table.insert(data.raw["technology"]["advanced-electonics-3"].effects, {
+    type = "unlock-recipe",
+    recipe = "convert-pcb4"
 })

@@ -20,20 +20,19 @@ if mods['bobelectronics'] and mods['pyhightech'] then
         result = 'basic-circuit-board'
     }
 
-    local mechRecep = {
-        enabled = true,
-        name = 'mech-brain-alt',
+    data.raw.recipe['convert-pcb4'] = {
+        enabled = 1,
+        name = 'convert-pcb4',
         type = 'recipe',
         ingredients = {
             {
                 type = 'item',
                 name = 'pcb4',
-                amount = 40
+                amount = 1
             }
         },
-        result = 'mech-brain'
+        result = 'multi-layer-circuit-board'
     }
-    data.raw.recipe['mech-brain-alt'] = mechRecep
 end
 
 if mods['boblogistics'] and settings.startup['bobmods-logistics-inserteroverhaul'].value == true then

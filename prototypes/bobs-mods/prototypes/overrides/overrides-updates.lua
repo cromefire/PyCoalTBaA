@@ -1,8 +1,6 @@
 
 if mods['bobelectronics'] and mods['pyhightech'] then
     fun.global_item_replacer('basic-circuit-board', 'pcb1')
-    fun.global_item_replacer('circuit-board', 'pcb2')
-    fun.global_item_replacer('superior-circuit-board', 'pcb3')
     fun.global_item_replacer('multi-layer-circuit-board', 'pcb4')
     data.raw.recipe['basic-circuit-board'].enabled = false
 

@@ -1,6 +1,6 @@
 -- DATA UPDATES STAGE OVERRIDES
 if mods['angelssmelting'] then
-    fun.global_item_replacer('liquid-molten-glass', 'molten-glass')
+    fun.global_item_replacer('molten-glass', 'liquid-molten-glass')
 end
 
 if mods['angelsrefining'] then
